@@ -4,8 +4,6 @@
       "mode": "auto"
     }
   ],
-  "cSpell.words": [
-    "rocketseat"
-  ],
+  "cSpell.words": ["bitnami", "rocketseat"],
   "prettier.trailingComma": "all"
 }
