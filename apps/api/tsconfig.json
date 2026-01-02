@@ -3,6 +3,7 @@
   "include": ["src/**/*", "@types/*.d.ts"],
   "compilerOptions": {
     "baseUrl": ".",
+    "ignoreDeprecations": "6.0",
     "paths": {
       "@/*": ["./src/*"]
     }
