@@ -61,7 +61,7 @@ export function OrganizationForm({
       </div>
 
       <div className="space-y-1">
-        <Label htmlFor="email">E-mail domain</Label>
+        <Label htmlFor="domain">E-mail domain</Label>
         <Input
           name="domain"
           type="text"
