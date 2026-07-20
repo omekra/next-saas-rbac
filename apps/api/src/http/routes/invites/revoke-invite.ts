@@ -13,7 +13,7 @@ export async function revokeInvite(app: FastifyInstance) {
   app
     .withTypeProvider<ZodTypeProvider>()
     .register(auth)
-    .post(
+    .delete(
       '/organizations/:slug/invites/:inviteId',
       {
         schema: {
@@ -52,9 +52,9 @@ export async function revokeInvite(app: FastifyInstance) {
           throw new BadRequestError('Invite not found.')
         }
 
-        await prisma.member.delete({
+        await prisma.invite.delete({
           where: {
-            id: invite.id,
+            id: inviteId,
           },
         })
 
