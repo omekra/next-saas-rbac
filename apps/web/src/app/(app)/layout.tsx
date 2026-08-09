@@ -15,7 +15,7 @@ export default async function AppLayout({
 
   return (
     <>
-      {children}
+      <div className="p-4">{children}</div>
       {sheet}
     </>
   )
